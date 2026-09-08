@@ -21,12 +21,16 @@ category: bitcoin
 dependencies:
   - bitcoin
 releaseNotes: >-
-  Sanitize user directory parsing against path traversal and autoindex
-  parent links. Add safe localStorage parsing to prevent UI crashes from
-  corrupted browser storage. Update build dependencies to resolve all
-  audit vulnerabilities. Update footer repository link to point to
-  blockdyor/bassin with safe new-tab attributes. This update does not
-  change the underlying ckpool service.
+  This update improves the reliability of the Bassin UI.
+
+
+  Improvements:
+    - Prevent UI crashes caused by corrupted browser storage
+    - Ignore invalid, duplicate, and parent directory links when loading user data
+    - Update the footer link to the current Bassin repository and open it in a new tab
+
+
+  The underlying ckpool service is unchanged.
 port: 5008
 submitter: duckaxe
 developer: blockdyor
